@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A survey form</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <h1>
+        <center>Survey Form</center>
+      </h1>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <form class="survey-form">
+        <h1 align="center">Application For Permission To Date</h1>
+        <p>
+          <b>Note:</b> Form is to be completed at least 21 days prior to date
+        </p>
+
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+          <!-- Name -->
+
+          <div>
+            <label id="nameid" for="name">Name : </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label id="emailid" for="email">Email : </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Contact no -->
+          <div>
+            <label id="contactid" for="contact">Contact No : </label>
+            <input
+              type="number"
+              name="contact"
+              id="contact"
+              placeholder="Enter your 10 digit contact no"
+              required
+            />
+          </div>
+
+          <!-- Gender -->
+          <div>
+            <label for="Gender">Gender : </label> <br />
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              checked
+            />Female<br />
+            <input type="radio" name="gender" value="male" checked />Male<br />
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              checked
+            />Other<br />
+          </div>
+
+          <!-- Address -->
+          <div>
+
+          </div>
+            <label for="address">Address : </label>
+            <textarea
+              name="address"
+              id="address"
+              placeholder="Enter your address"
+              required
+              rows="5" cols="30"
+            >
+            </textarea>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
